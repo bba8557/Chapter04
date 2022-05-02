@@ -11,7 +11,6 @@ public class MyListApp {
 		Point p02 = new Point(13, 15);
 		Point p03 = new Point(113, 115);
 		Point p04 = new Point(1113, 1115);
-		Circle c01 = new Circle(5);
 		
 		pList.add(p01);
 		pList.add(p02);
@@ -60,5 +59,28 @@ public class MyListApp {
 		pList.add(1, p04);
 		System.out.println(pList.toString());
 		
+		System.out.println("====================================");
+		
+		ArrayList<Circle> cList = new ArrayList<Circle>();
+		
+		Circle c01 = new Circle(7);
+		Circle c02 = new Circle(17);
+		Circle c03 = new Circle(117);
+		Circle c04 = new Circle(1117);
+		
+		cList.add(c01);
+		cList.add(c02);
+		cList.add(c03);
+		cList.add(c04);
+		
+		System.out.println(cList.size());
+		
+		for(int i=0; i<cList.size(); i++) {
+			System.out.println(cList.get(i).toString());
+		}
+		for(Circle c : cList) {
+			System.out.println(c.toString());
+			System.out.println(c.getRadius());
+		}
 	}
 }
