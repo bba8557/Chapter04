@@ -49,11 +49,14 @@ public class MyListApp {
 		cList.add(c01);
 		cList.add(c02);
 		
+		//Circle 갯수
 		System.out.println(cList.size());
 		
+		//[1]방의 반지름
 		Circle c = cList.get(1);
 		System.out.println(c.getRadius());
 		
+		//전체출력toString();
 		for(int i=0; i<cList.size(); i++) {
 			System.out.println(cList.get(i).toString());
 		}
