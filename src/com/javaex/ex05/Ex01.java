@@ -13,9 +13,13 @@ public class Ex01 {
 		Integer i02 = 5;
 		Integer i03 = 6;
 		
+		//중복확인
+		Integer i04 = 5;
+		
 		iset.add(i01);
 		iset.add(i02);
 		iset.add(i03);
+		iset.add(i04);
 		
 		System.out.println(iset.size());
 		System.out.println(iset.toString());
